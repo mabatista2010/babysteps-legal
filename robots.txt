@@ -1,2 +1,5 @@
 User-agent: *
 Allow: /
+
+# Auth recovery URLs should not be indexed
+Disallow: /reset-password.html
