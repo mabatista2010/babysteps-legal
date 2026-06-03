@@ -1,0 +1,71 @@
+{
+  "version": "2026-06-03",
+  "generatedAt": "2026-06-03T00:00:00.000Z",
+  "baseUrl": "https://mabatista2010.github.io/babysteps-legal",
+  "documents": [
+    {
+      "type": "privacy",
+      "locale": "es",
+      "version": "2026-06-03",
+      "currentUrl": "https://mabatista2010.github.io/babysteps-legal/privacy-es.html",
+      "publicUrl": "https://mabatista2010.github.io/babysteps-legal/legal/2026-06-03/privacy-es.html",
+      "sha256": "4dcbaf320e9c548957fe9b2b46f667909259eac190b303ea12306c4f42f01131"
+    },
+    {
+      "type": "privacy",
+      "locale": "fr",
+      "version": "2026-06-03",
+      "currentUrl": "https://mabatista2010.github.io/babysteps-legal/privacy-fr.html",
+      "publicUrl": "https://mabatista2010.github.io/babysteps-legal/legal/2026-06-03/privacy-fr.html",
+      "sha256": "3a56d60a88bf5f34186dbc4e39e71cd70f5a17e74427be2d3eb20800df60c53e"
+    },
+    {
+      "type": "privacy",
+      "locale": "en",
+      "version": "2026-06-03",
+      "currentUrl": "https://mabatista2010.github.io/babysteps-legal/privacy.html",
+      "publicUrl": "https://mabatista2010.github.io/babysteps-legal/legal/2026-06-03/privacy.html",
+      "sha256": "90754c51ae819245d90244b9048e2470244a036eb8ef8717cfe2e77092be07fd"
+    },
+    {
+      "type": "privacy",
+      "locale": "pt-PT",
+      "version": "2026-06-03",
+      "currentUrl": "https://mabatista2010.github.io/babysteps-legal/privacy-pt.html",
+      "publicUrl": "https://mabatista2010.github.io/babysteps-legal/legal/2026-06-03/privacy-pt.html",
+      "sha256": "e36ee63b92c7bd480d531c981a207eb93da29ae6a5afdd6fbb217c0e1a459933"
+    },
+    {
+      "type": "terms",
+      "locale": "es",
+      "version": "2026-06-03",
+      "currentUrl": "https://mabatista2010.github.io/babysteps-legal/terms-es.html",
+      "publicUrl": "https://mabatista2010.github.io/babysteps-legal/legal/2026-06-03/terms-es.html",
+      "sha256": "cb2f83214634cb62a70d9dc0266d6301189cd485793c861a0268e08fe6d8d74a"
+    },
+    {
+      "type": "terms",
+      "locale": "fr",
+      "version": "2026-06-03",
+      "currentUrl": "https://mabatista2010.github.io/babysteps-legal/terms-fr.html",
+      "publicUrl": "https://mabatista2010.github.io/babysteps-legal/legal/2026-06-03/terms-fr.html",
+      "sha256": "67dd55935d08a273ab96aebc2a28f8e8a936ec7b1fb5ce43c2a462ce4036c665"
+    },
+    {
+      "type": "terms",
+      "locale": "en",
+      "version": "2026-06-03",
+      "currentUrl": "https://mabatista2010.github.io/babysteps-legal/terms.html",
+      "publicUrl": "https://mabatista2010.github.io/babysteps-legal/legal/2026-06-03/terms.html",
+      "sha256": "0092254e5d0417dadd869215c75a98c60697504c96e80351284cac6e6f2a8990"
+    },
+    {
+      "type": "terms",
+      "locale": "pt-PT",
+      "version": "2026-06-03",
+      "currentUrl": "https://mabatista2010.github.io/babysteps-legal/terms-pt.html",
+      "publicUrl": "https://mabatista2010.github.io/babysteps-legal/legal/2026-06-03/terms-pt.html",
+      "sha256": "5d9a3dfab1a60a8ef884a8e5835b59ef5ac5cac5ee069ee8b2d18f3e89bed21e"
+    }
+  ]
+}
