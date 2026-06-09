@@ -20,7 +20,7 @@ if (!manifest.version || !Array.isArray(manifest.documents)) {
   throw new Error('Invalid manifest: missing version/documents.');
 }
 
-const expectedLocales = new Set(['es', 'fr', 'en', 'pt-PT']);
+const expectedLocales = new Set(['es', 'fr', 'en', 'pt-PT', 'it']);
 const expectedTypes = new Set(['terms', 'privacy']);
 const seen = new Set();
 
