@@ -1,47 +1,55 @@
 {
-  "version": "2026-06-03",
-  "generatedAt": "2026-06-03T00:00:00.000Z",
+  "schemaVersion": 2,
+  "manifestVersion": "2026-07-17",
+  "generatedAt": "2026-07-17T17:00:38Z",
   "baseUrl": "https://mabatista2010.github.io/babysteps-legal",
+  "reviewStatus": "approved-human-legal-review",
+  "legalBasisFinal": true,
+  "publicationAuthorized": true,
+  "documentVersions": {
+    "privacy": "2026-07-17",
+    "terms": "2026-06-03"
+  },
   "documents": [
     {
       "type": "privacy",
       "locale": "es",
-      "version": "2026-06-03",
+      "version": "2026-07-17",
       "currentUrl": "https://mabatista2010.github.io/babysteps-legal/privacy-es.html",
-      "publicUrl": "https://mabatista2010.github.io/babysteps-legal/legal/2026-06-03/privacy-es.html",
-      "sha256": "4dcbaf320e9c548957fe9b2b46f667909259eac190b303ea12306c4f42f01131"
+      "publicUrl": "https://mabatista2010.github.io/babysteps-legal/legal/2026-07-17/privacy-es.html",
+      "sha256": "510088d32883b3ce1233c7cb79364a1201579a168956acecfa74db1c9a110add"
     },
     {
       "type": "privacy",
       "locale": "fr",
-      "version": "2026-06-03",
+      "version": "2026-07-17",
       "currentUrl": "https://mabatista2010.github.io/babysteps-legal/privacy-fr.html",
-      "publicUrl": "https://mabatista2010.github.io/babysteps-legal/legal/2026-06-03/privacy-fr.html",
-      "sha256": "3a56d60a88bf5f34186dbc4e39e71cd70f5a17e74427be2d3eb20800df60c53e"
+      "publicUrl": "https://mabatista2010.github.io/babysteps-legal/legal/2026-07-17/privacy-fr.html",
+      "sha256": "d099c26293af1b42c76ce1ba072dbac54316d8eda271aa887b18f36f59454ca5"
     },
     {
       "type": "privacy",
       "locale": "en",
-      "version": "2026-06-03",
+      "version": "2026-07-17",
       "currentUrl": "https://mabatista2010.github.io/babysteps-legal/privacy.html",
-      "publicUrl": "https://mabatista2010.github.io/babysteps-legal/legal/2026-06-03/privacy.html",
-      "sha256": "90754c51ae819245d90244b9048e2470244a036eb8ef8717cfe2e77092be07fd"
+      "publicUrl": "https://mabatista2010.github.io/babysteps-legal/legal/2026-07-17/privacy.html",
+      "sha256": "3013ff0445c4b0249c614b0f18497369634069dd5cdd9ee4639291bed1e30fdb"
     },
     {
       "type": "privacy",
       "locale": "pt-PT",
-      "version": "2026-06-03",
+      "version": "2026-07-17",
       "currentUrl": "https://mabatista2010.github.io/babysteps-legal/privacy-pt.html",
-      "publicUrl": "https://mabatista2010.github.io/babysteps-legal/legal/2026-06-03/privacy-pt.html",
-      "sha256": "e36ee63b92c7bd480d531c981a207eb93da29ae6a5afdd6fbb217c0e1a459933"
+      "publicUrl": "https://mabatista2010.github.io/babysteps-legal/legal/2026-07-17/privacy-pt.html",
+      "sha256": "03468fcd7f171ee2907995e6965f1b05c862b12b07fb27e329d81aeb8f805f94"
     },
     {
       "type": "privacy",
       "locale": "it",
-      "version": "2026-06-03",
+      "version": "2026-07-17",
       "currentUrl": "https://mabatista2010.github.io/babysteps-legal/privacy-it.html",
-      "publicUrl": "https://mabatista2010.github.io/babysteps-legal/legal/2026-06-03/privacy-it.html",
-      "sha256": "7e76a94ea68f97dfb2da22e295c4751f26d81fdbdb0731aaadea396fe2f8e734"
+      "publicUrl": "https://mabatista2010.github.io/babysteps-legal/legal/2026-07-17/privacy-it.html",
+      "sha256": "01f76db6a8c57bdce952b6d9f59820e1f43438b32137e1d67f310b899104939f"
     },
     {
       "type": "terms",
