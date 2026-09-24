@@ -24,7 +24,33 @@ const bridge = template.replace(/__TEXT_(\w+)__/g, (_, key) => {
 }).replace('__BRIDGE_COPY_JSON__', JSON.stringify(Object.fromEntries(locales.map((locale) => [locale, copy[locale].bridge])), null, 2).replaceAll('<', '\\u003c'));
 function email(locale) {
   const c = copy[locale].email;
-  return `<!doctype html>\n<html lang="${locale}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>${escape(c.subject)}</title></head><body style="font-family:Arial,sans-serif;color:#302a26;line-height:1.6;max-width:560px;margin:24px auto;padding:0 20px">\n<p>BabySteps</p>\n<h1 style="font-size:24px">${escape(c.title)}</h1>\n<p>${escape(c.intro)}</p>\n<p><a href="{{ .ConfirmationURL }}">${escape(c.action)}</a></p>\n<p>${escape(c.security)}</p>\n<p>${escape(c.ignore)}</p>\n<p>${escape(c.help)} <a href="mailto:support@babysteps.space">support@babysteps.space</a></p>\n</body></html>`;
+  // Existing BabySteps tokens, also used by the accepted beta invitation.
+  // No image/font fetch: Nunito Sans is optional; Arial is the safe fallback.
+  // Presentation tables constrain email layout; there is no card/shadow or tracking.
+  return `<!doctype html>
+<html lang="${locale}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>${escape(c.subject)}</title></head>
+<body bgcolor="#fbf9f4" style="margin:0;padding:0;background-color:#fbf9f4;color:#4a352e;font-family:'Nunito Sans',Arial,sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%">
+<div aria-hidden="true" style="display:none;font-size:1px;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;mso-hide:all">${escape(c.title)}</div>
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#fbf9f4" style="width:100%;border-collapse:collapse;background-color:#fbf9f4">
+<tr><td align="center" style="padding:24px 16px">
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%;max-width:560px;border-collapse:collapse">
+<tr><td style="padding:16px 24px 32px;color:#4a352e;font-family:'Nunito Sans',Arial,sans-serif;word-wrap:break-word;overflow-wrap:break-word">
+<p style="margin:0 0 12px;font-size:24px;line-height:32px;font-weight:800;letter-spacing:-0.6px;color:#4a352e">BabySteps</p>
+<table role="presentation" width="40" border="0" cellspacing="0" cellpadding="0" aria-hidden="true" style="width:40px;border-collapse:collapse"><tr><td height="4" bgcolor="#ef8068" style="height:4px;font-size:0;line-height:0;background-color:#ef8068">&nbsp;</td></tr></table>
+<h1 style="margin:32px 0 16px;font-size:30px;line-height:36px;font-weight:800;letter-spacing:-0.6px;color:#4a352e;word-wrap:break-word">${escape(c.title)}</h1>
+<p style="margin:0 0 24px;font-size:16px;line-height:26px;color:#6f5d55">${escape(c.intro)}</p>
+<table role="presentation" border="0" cellspacing="0" cellpadding="0" style="border-collapse:separate;max-width:100%;margin:0 0 28px"><tr><td bgcolor="#ef8068" style="border-radius:12px;background-color:#ef8068">
+<a href="{{ .ConfirmationURL }}" style="display:inline-block;border:14px solid #ef8068;border-left-width:24px;border-right-width:24px;border-radius:12px;background-color:#ef8068;color:#2b2926;font-family:'Nunito Sans',Arial,sans-serif;font-size:16px;line-height:24px;font-weight:800;text-align:center;text-decoration:none;word-wrap:break-word">${escape(c.action)}</a>
+</td></tr></table>
+<p style="margin:0 0 16px;font-size:15px;line-height:24px;color:#6f5d55">${escape(c.security)}</p>
+<p style="margin:0 0 28px;font-size:15px;line-height:24px;color:#6f5d55">${escape(c.ignore)}</p>
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse"><tr><td style="border-top:1px solid #e6ded1;padding-top:24px;color:#4a352e;font-family:'Nunito Sans',Arial,sans-serif">
+<p style="margin:0 0 4px;font-size:15px;line-height:24px;font-weight:700">${escape(c.help)}</p>
+<p style="margin:0;font-size:15px;line-height:24px"><a href="mailto:support@babysteps.space" style="color:#4a352e;text-decoration:underline;text-underline-offset:3px">support@babysteps.space</a></p>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+</body></html>`;
 }
 // Go's standard eq/if only; no unverified custom split/contains functions.
 // Exact request redirect, not user metadata. Missing/unsupported/legacy input -> es.
