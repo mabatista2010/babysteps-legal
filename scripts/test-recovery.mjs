@@ -346,7 +346,7 @@ const proposal = JSON.parse(readFileSync(join(root, 'auth/recovery-config-propos
 assert.deepEqual(Object.keys(proposal), ['mailer_subjects_recovery', 'mailer_templates_recovery_content']);
 function selectBranch(template, redirect) {
   const pieces = template.split(/(\{\{ (?:if|else if) eq \.RedirectTo "[^"]+" \}\}|\{\{ else \}\}|\{\{ end \}\})/).filter(Boolean);
-  assert.equal(pieces.at(-1).trim(), ''); // body/subject review files have trailing LF
+  assert.equal(pieces.at(-1).trim(), ''); // reviewed body file has trailing LF
   let selected = null;
   let matches = false;
   let branchCount = 0;
@@ -368,13 +368,31 @@ const bodySource = readFileSync(join(root, 'auth/recovery-email.html'), 'utf8');
 assert.equal(proposal.mailer_subjects_recovery, subjectSource.trim());
 assert.equal(proposal.mailer_templates_recovery_content, bodySource);
 assert(!/[\r\n]/.test(proposal.mailer_subjects_recovery));
+function subjectWithinProviderBounds(value) {
+  return typeof value === 'string' && value.trim().length > 0 &&
+    !/[\r\n]/.test(value) && value.length <= 255 && Buffer.byteLength(value, 'utf8') <= 255;
+}
+await test('email global literal subject, CR/LF rejection and conservative raw255 boundaries', () => {
+  const raw = proposal.mailer_subjects_recovery;
+  assert.equal(raw, 'BabySteps');
+  assert.equal(subjectSource, 'BabySteps\n');
+  assert(subjectWithinProviderBounds(raw));
+  assert(!/\{\{|\}\}/.test(raw));
+  for (const size of [254, 255, 256]) assert.equal(subjectWithinProviderBounds('a'.repeat(size)), size <= 255);
+  for (const value of ['', ' ', 'BabySteps\r', 'BabySteps\n', 'BabySteps\r\nBcc: synthetic@example.invalid']) assert.equal(subjectWithinProviderBounds(value), false);
+  assert.equal(subjectWithinProviderBounds('é'.repeat(127)), true);
+  assert.equal(subjectWithinProviderBounds('é'.repeat(128)), false);
+  assert.equal(subjectWithinProviderBounds('😀'.repeat(63)), true);
+  assert.equal(subjectWithinProviderBounds('😀'.repeat(64)), false);
+});
 for (const locale of locales) {
-  await test(`${locale}: email subject/body branch and unchanged ConfirmationURL placeholder (static simulation)`, () => {
+  await test(`${locale}: literal email subject/body locale branch and unchanged ConfirmationURL placeholder (static simulation)`, () => {
     const redirect = `${web}?lang=${locale}`;
-    const subject = selectBranch(subjectSource, redirect);
+    const subject = proposal.mailer_subjects_recovery;
     const body = selectBranch(bodySource, redirect);
-    assert.equal(subject, dictionaries[locale].email.subject);
+    assert.equal(subject, 'BabySteps');
     assert(body.includes(`<html lang="${locale}">`));
+    assert(body.includes(dictionaries[locale].email.subject)); // native body title remains localized
     assert(body.includes(dictionaries[locale].email.title));
     assert.equal((body.match(/\{\{ \.ConfirmationURL \}\}/g) || []).length, 1);
     assert(body.includes('href="{{ .ConfirmationURL }}"'));
@@ -382,9 +400,9 @@ for (const locale of locales) {
     assert(body.includes('mailto:support@babysteps.space'));
   });
 }
-await test('email missing/invalid/external/extra-query locale -> Spanish, never arbitrary redirect', () => {
+await test('email missing/invalid/external/extra-query locale -> Spanish body, global brand subject, never arbitrary redirect', () => {
   for (const redirect of [web, '', `${web}?lang=de`, `${web}?lang=pt-BR`, `${web}?lang=fr&next=evil`, 'https://evil.invalid/?lang=fr']) {
-    assert.equal(selectBranch(subjectSource, redirect), dictionaries.es.email.subject);
+    assert.equal(proposal.mailer_subjects_recovery, 'BabySteps');
     assert(selectBranch(bodySource, redirect).includes('<html lang="es">'));
   }
 });

@@ -57,12 +57,15 @@ function email(locale) {
 function branches(render) {
   return locales.filter((locale) => locale !== 'es').map((locale, i) => `{{ ${i ? 'else if' : 'if'} eq .RedirectTo "${web}?lang=${locale}" }}${render(locale)}`).join('') + `{{ else }}${render('es')}{{ end }}\n`;
 }
+// Approved global brand subject; locale-specific copy remains in the unchanged body.
+const recoverySubject = 'BabySteps';
+if (recoverySubject.length > 255 || Buffer.byteLength(recoverySubject, 'utf8') > 255 || /[\r\n]/.test(recoverySubject)) throw new Error('Recovery subject exceeds conservative provider limit');
 const outputs = {
   'reset-password.html': bridge,
   'auth/recovery-email.html': branches(email),
-  'auth/recovery-subject.txt': branches((locale) => copy[locale].email.subject),
+  'auth/recovery-subject.txt': recoverySubject + '\n',
   'auth/recovery-config-proposal.json': JSON.stringify({
-    mailer_subjects_recovery: branches((locale) => copy[locale].email.subject).trim(),
+    mailer_subjects_recovery: recoverySubject,
     mailer_templates_recovery_content: branches(email),
   }, null, 2) + '\n',
 };
