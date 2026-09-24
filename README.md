@@ -32,3 +32,7 @@ blocks indexing/referrers, supports Supabase recovery payload formats, and
 matches the pinned Supabase JS CDN SRI hash.
 
 This repository intentionally contains only public legal/support pages and no app source code or secrets.
+
+## Compatible legal channels (prepared, not published)
+
+See `CHANNELS.md`. Legacy current URLs and the historical manifest stay byte-identical. New documents use `legal/2026-09-24/`; do not overwrite legacy aliases.

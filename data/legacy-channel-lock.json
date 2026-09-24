@@ -1,0 +1,159 @@
+{
+  "policy": "legacy93-frozen-published-surface",
+  "gitBase": "95673d138bcbf8bc3a42caffbacb05bca985c8f0",
+  "catalogVersion": "2026-06-03",
+  "publicPrivacyBase": "2026-07-17",
+  "historicalMismatch": "Preserved, not retroactively repaired or consented",
+  "files": [
+    {
+      "file": "404.html",
+      "sha256": "a705035294763879579c5d21a8316bb4dcd58fe369dcf5fa6103dc12cc6cbafb",
+      "bytes": 919
+    },
+    {
+      "file": "assets/styles.css",
+      "sha256": "6dd6c03a02f5f1978a8c7fdcc1d65b5aa7a54a2b5dbb6503d8d83be033f7ac90",
+      "bytes": 10646
+    },
+    {
+      "file": "index.html",
+      "sha256": "84680f5f04530ece886bf398ed6e4d025bb2fe774f54510e58dfdf17f0b7dd1c",
+      "bytes": 5677
+    },
+    {
+      "file": "legal/2026-06-03/privacy-es.html",
+      "sha256": "4dcbaf320e9c548957fe9b2b46f667909259eac190b303ea12306c4f42f01131",
+      "bytes": 11956
+    },
+    {
+      "file": "legal/2026-06-03/privacy-fr.html",
+      "sha256": "3a56d60a88bf5f34186dbc4e39e71cd70f5a17e74427be2d3eb20800df60c53e",
+      "bytes": 12842
+    },
+    {
+      "file": "legal/2026-06-03/privacy-it.html",
+      "sha256": "7e76a94ea68f97dfb2da22e295c4751f26d81fdbdb0731aaadea396fe2f8e734",
+      "bytes": 11877
+    },
+    {
+      "file": "legal/2026-06-03/privacy-pt.html",
+      "sha256": "e36ee63b92c7bd480d531c981a207eb93da29ae6a5afdd6fbb217c0e1a459933",
+      "bytes": 12011
+    },
+    {
+      "file": "legal/2026-06-03/privacy.html",
+      "sha256": "90754c51ae819245d90244b9048e2470244a036eb8ef8717cfe2e77092be07fd",
+      "bytes": 11080
+    },
+    {
+      "file": "legal/2026-06-03/terms-es.html",
+      "sha256": "cb2f83214634cb62a70d9dc0266d6301189cd485793c861a0268e08fe6d8d74a",
+      "bytes": 11180
+    },
+    {
+      "file": "legal/2026-06-03/terms-fr.html",
+      "sha256": "67dd55935d08a273ab96aebc2a28f8e8a936ec7b1fb5ce43c2a462ce4036c665",
+      "bytes": 11979
+    },
+    {
+      "file": "legal/2026-06-03/terms-it.html",
+      "sha256": "79a13443cdb4d2933d1d6d2149b80e26a5802b510d187a42f66884385b4d8d65",
+      "bytes": 11270
+    },
+    {
+      "file": "legal/2026-06-03/terms-pt.html",
+      "sha256": "5d9a3dfab1a60a8ef884a8e5835b59ef5ac5cac5ee069ee8b2d18f3e89bed21e",
+      "bytes": 11344
+    },
+    {
+      "file": "legal/2026-06-03/terms.html",
+      "sha256": "0092254e5d0417dadd869215c75a98c60697504c96e80351284cac6e6f2a8990",
+      "bytes": 10553
+    },
+    {
+      "file": "legal/2026-07-17/privacy-es.html",
+      "sha256": "510088d32883b3ce1233c7cb79364a1201579a168956acecfa74db1c9a110add",
+      "bytes": 25809
+    },
+    {
+      "file": "legal/2026-07-17/privacy-fr.html",
+      "sha256": "d099c26293af1b42c76ce1ba072dbac54316d8eda271aa887b18f36f59454ca5",
+      "bytes": 28609
+    },
+    {
+      "file": "legal/2026-07-17/privacy-it.html",
+      "sha256": "01f76db6a8c57bdce952b6d9f59820e1f43438b32137e1d67f310b899104939f",
+      "bytes": 26675
+    },
+    {
+      "file": "legal/2026-07-17/privacy-pt.html",
+      "sha256": "03468fcd7f171ee2907995e6965f1b05c862b12b07fb27e329d81aeb8f805f94",
+      "bytes": 26401
+    },
+    {
+      "file": "legal/2026-07-17/privacy.html",
+      "sha256": "3013ff0445c4b0249c614b0f18497369634069dd5cdd9ee4639291bed1e30fdb",
+      "bytes": 24186
+    },
+    {
+      "file": "legal/manifest.json",
+      "sha256": "d7cfae89709750653cf7144425981fd71e42ce1915ad96720aec3e1cb44813f1",
+      "bytes": 3983
+    },
+    {
+      "file": "privacy-es.html",
+      "sha256": "510088d32883b3ce1233c7cb79364a1201579a168956acecfa74db1c9a110add",
+      "bytes": 25809
+    },
+    {
+      "file": "privacy-fr.html",
+      "sha256": "d099c26293af1b42c76ce1ba072dbac54316d8eda271aa887b18f36f59454ca5",
+      "bytes": 28609
+    },
+    {
+      "file": "privacy-it.html",
+      "sha256": "01f76db6a8c57bdce952b6d9f59820e1f43438b32137e1d67f310b899104939f",
+      "bytes": 26675
+    },
+    {
+      "file": "privacy-pt.html",
+      "sha256": "03468fcd7f171ee2907995e6965f1b05c862b12b07fb27e329d81aeb8f805f94",
+      "bytes": 26401
+    },
+    {
+      "file": "privacy.html",
+      "sha256": "3013ff0445c4b0249c614b0f18497369634069dd5cdd9ee4639291bed1e30fdb",
+      "bytes": 24186
+    },
+    {
+      "file": "robots.txt",
+      "sha256": "6fb482b42812a7bf3cff7343010d357be7eca42381d5af24f9ae800cd8fd7492",
+      "bytes": 98
+    },
+    {
+      "file": "terms-es.html",
+      "sha256": "a2e7d3356d68b56989380219c8e5b0ae97eabcb540d9014b7b4b1e4f01fd54e3",
+      "bytes": 11166
+    },
+    {
+      "file": "terms-fr.html",
+      "sha256": "7e584342d96ed6aa7ef0c7af6e64ad3900b45305408eaf9c4222f1caedef8ab0",
+      "bytes": 11965
+    },
+    {
+      "file": "terms-it.html",
+      "sha256": "9a44d177f9184bce87ceb5b1aec07124cc456c05771b323e49ce76e9aa5af4e7",
+      "bytes": 11138
+    },
+    {
+      "file": "terms-pt.html",
+      "sha256": "f6ee28986a058296d3e0b66c21e842bd07019747038a0b779edc0d39ea9a1bd5",
+      "bytes": 11330
+    },
+    {
+      "file": "terms.html",
+      "sha256": "58fd2bc2b83820daad1a5132aa2777a6fcabe92e2f09e056ed11da2f90d47910",
+      "bytes": 10539
+    }
+  ]
+}
