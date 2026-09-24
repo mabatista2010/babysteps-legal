@@ -43,10 +43,19 @@ includesAll(html, [
   'exchangeCodeForSession',
   'verifyOtp',
   'updateUser',
-  "signOut({ scope: 'global' })",
+  "clearSession('global')",
+  "clearSession('local')",
+  "client.auth.signOut({ scope })",
+  "persistSession: false",
+  "detectSessionInUrl: false",
+  "autoRefreshToken: false",
   'stripRecoveryParamsFromAddressBar',
   'history.replaceState',
 ], 'flujo Supabase recovery');
+
+check(html.indexOf('stripRecoveryParamsFromAddressBar();') < html.indexOf('<script src='), 'credentials must be removed before CDN load');
+check(html.includes("['es', 'fr', 'en', 'pt-PT', 'it']"), 'locale allowlist changed');
+check(!/error\.message|error_description.*textContent/.test(html), 'raw provider errors may leak into UI');
 
 const scriptMatch = html.match(/<script\s+src="([^"]*supabase-js@2\.104\.0[^"]*)"([^>]*)><\/script>/i);
 check(Boolean(scriptMatch), 'falta script CDN Supabase JS v2.104.0');

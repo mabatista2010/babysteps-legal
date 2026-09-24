@@ -1,0 +1,162 @@
+{
+  "es": {
+    "bridge": {
+      "pageTitle": "Recuperar contraseña — BabySteps",
+      "pageDescription": "Página segura de recuperación de contraseña para BabySteps.",
+      "homeLabel": "Inicio de BabySteps Legal", "navLabel": "Información legal",
+      "privacy": "Privacidad", "support": "Soporte", "kicker": "Recuperación segura",
+      "title": "Crea una nueva contraseña",
+      "intro": "Intentaremos abrir BabySteps automáticamente si la app está instalada. Si no se abre, puedes terminar el cambio de contraseña en esta página.",
+      "checking": "Validando enlace seguro…", "openApp": "Abrir BabySteps", "webAction": "Cambiar desde esta página",
+      "password": "Nueva contraseña", "confirmPassword": "Repetir nueva contraseña",
+      "passwordPlaceholder": "Mínimo 8 caracteres", "confirmPlaceholder": "Vuelve a escribirla",
+      "submit": "Actualizar contraseña", "cancel": "Cancelar recuperación",
+      "help": "Si el enlace ha caducado, vuelve a la app y pide un nuevo email de recuperación.",
+      "rights": "© 2026 BabySteps. Todos los derechos reservados.",
+      "valid": "Enlace seguro detectado. Si tienes la app instalada, se abrirá automáticamente.",
+      "invalid": "El enlace de recuperación no es válido o ha caducado. Pide un nuevo enlace desde BabySteps.",
+      "minLength": "La contraseña debe tener al menos 8 caracteres.", "mismatch": "Las contraseñas no coinciden.",
+      "saving": "Guardando contraseña…", "updating": "Actualizando contraseña…",
+      "moduleError": "No se pudo cargar el módulo seguro de recuperación. Revisa tu conexión e inténtalo de nuevo.",
+      "success": "Contraseña actualizada. Ya puedes iniciar sesión en BabySteps con tu nueva contraseña.",
+      "updated": "Contraseña actualizada", "samePassword": "La nueva contraseña debe ser distinta de la actual.",
+      "cancelled": "Recuperación cancelada. Tu contraseña no se ha cambiado desde esta página. Para continuar, pide un nuevo enlace desde BabySteps."
+    },
+    "email": {
+      "subject": "Recupera el acceso a BabySteps", "title": "Crea una nueva contraseña",
+      "intro": "Hemos recibido una solicitud para restablecer la contraseña de tu cuenta BabySteps. Usa este enlace para elegir una nueva contraseña.",
+      "action": "Restablecer contraseña",
+      "security": "El enlace es personal y caduca. No lo compartas. Se abrirá BabySteps si está instalada o podrás continuar en la página web.",
+      "ignore": "Si no has solicitado este cambio, puedes ignorar este correo. Tu contraseña no cambiará por recibirlo.",
+      "help": "¿Necesitas ayuda?"
+    }
+  },
+  "fr": {
+    "bridge": {
+      "pageTitle": "Réinitialiser le mot de passe — BabySteps",
+      "pageDescription": "Page sécurisée de réinitialisation du mot de passe BabySteps.",
+      "homeLabel": "Accueil des informations légales BabySteps", "navLabel": "Informations légales",
+      "privacy": "Confidentialité", "support": "Assistance", "kicker": "Récupération sécurisée",
+      "title": "Choisis un nouveau mot de passe",
+      "intro": "Nous allons essayer d’ouvrir BabySteps automatiquement si l’application est installée. Sinon, tu peux modifier ton mot de passe sur cette page.",
+      "checking": "Vérification du lien sécurisé…", "openApp": "Ouvrir BabySteps", "webAction": "Modifier sur cette page",
+      "password": "Nouveau mot de passe", "confirmPassword": "Confirmer le nouveau mot de passe",
+      "passwordPlaceholder": "Au moins 8 caractères", "confirmPlaceholder": "Saisis-le à nouveau",
+      "submit": "Mettre à jour le mot de passe", "cancel": "Annuler la récupération",
+      "help": "Si le lien a expiré, retourne dans l’application pour demander un nouvel e-mail de réinitialisation.",
+      "rights": "© 2026 BabySteps. Tous droits réservés.",
+      "valid": "Lien sécurisé détecté. Si l’application est installée, elle s’ouvrira automatiquement.",
+      "invalid": "Le lien de réinitialisation n’est pas valide ou a expiré. Demande un nouveau lien dans BabySteps.",
+      "minLength": "Le mot de passe doit contenir au moins 8 caractères.", "mismatch": "Les mots de passe ne correspondent pas.",
+      "saving": "Enregistrement du mot de passe…", "updating": "Mise à jour du mot de passe…",
+      "moduleError": "Le module sécurisé de réinitialisation n’a pas pu être chargé. Vérifie ta connexion et réessaie.",
+      "success": "Mot de passe mis à jour. Tu peux maintenant te connecter à BabySteps avec ton nouveau mot de passe.",
+      "updated": "Mot de passe mis à jour", "samePassword": "Le nouveau mot de passe doit être différent du mot de passe actuel.",
+      "cancelled": "Récupération annulée. Ton mot de passe n’a pas été modifié depuis cette page. Pour continuer, demande un nouveau lien dans BabySteps."
+    },
+    "email": {
+      "subject": "Retrouve l’accès à BabySteps", "title": "Choisis un nouveau mot de passe",
+      "intro": "Nous avons reçu une demande de réinitialisation du mot de passe de ton compte BabySteps. Utilise ce lien pour choisir un nouveau mot de passe.",
+      "action": "Réinitialiser le mot de passe",
+      "security": "Ce lien est personnel et expire. Ne le partage pas. BabySteps s’ouvrira si l’application est installée, sinon tu pourras continuer sur la page web.",
+      "ignore": "Si tu n’as pas demandé ce changement, tu peux ignorer cet e-mail. Le simple fait de le recevoir ne modifie pas ton mot de passe.",
+      "help": "Besoin d’aide ?"
+    }
+  },
+  "en": {
+    "bridge": {
+      "pageTitle": "Reset your password — BabySteps",
+      "pageDescription": "Secure password reset page for BabySteps.",
+      "homeLabel": "BabySteps Legal home", "navLabel": "Legal information",
+      "privacy": "Privacy", "support": "Support", "kicker": "Secure recovery",
+      "title": "Create a new password",
+      "intro": "We’ll try to open BabySteps automatically if the app is installed. If it doesn’t open, you can finish resetting your password on this page.",
+      "checking": "Checking your secure link…", "openApp": "Open BabySteps", "webAction": "Reset on this page",
+      "password": "New password", "confirmPassword": "Confirm new password",
+      "passwordPlaceholder": "At least 8 characters", "confirmPlaceholder": "Enter it again",
+      "submit": "Update password", "cancel": "Cancel recovery",
+      "help": "If the link has expired, return to the app and request a new password reset email.",
+      "rights": "© 2026 BabySteps. All rights reserved.",
+      "valid": "Secure link detected. If the app is installed, it will open automatically.",
+      "invalid": "This password reset link is invalid or has expired. Request a new link in BabySteps.",
+      "minLength": "Your password must be at least 8 characters long.", "mismatch": "The passwords don’t match.",
+      "saving": "Saving password…", "updating": "Updating password…",
+      "moduleError": "The secure recovery module couldn’t be loaded. Check your connection and try again.",
+      "success": "Password updated. You can now sign in to BabySteps with your new password.",
+      "updated": "Password updated", "samePassword": "Your new password must be different from your current password.",
+      "cancelled": "Recovery cancelled. Your password hasn’t been changed on this page. To continue, request a new link in BabySteps."
+    },
+    "email": {
+      "subject": "Recover access to BabySteps", "title": "Create a new password",
+      "intro": "We received a request to reset your BabySteps account password. Use this link to choose a new password.",
+      "action": "Reset password",
+      "security": "This link is personal and will expire. Don’t share it. BabySteps will open if the app is installed, or you can continue on the web page.",
+      "ignore": "If you didn’t request this change, you can ignore this email. Receiving it won’t change your password.",
+      "help": "Need help?"
+    }
+  },
+  "pt-PT": {
+    "bridge": {
+      "pageTitle": "Repor a palavra-passe — BabySteps",
+      "pageDescription": "Página segura de reposição da palavra-passe do BabySteps.",
+      "homeLabel": "Início das informações legais do BabySteps", "navLabel": "Informações legais",
+      "privacy": "Privacidade", "support": "Apoio", "kicker": "Recuperação segura",
+      "title": "Cria uma nova palavra-passe",
+      "intro": "Vamos tentar abrir o BabySteps automaticamente se a aplicação estiver instalada. Se não abrir, podes concluir a alteração da palavra-passe nesta página.",
+      "checking": "A validar a ligação segura…", "openApp": "Abrir BabySteps", "webAction": "Alterar nesta página",
+      "password": "Nova palavra-passe", "confirmPassword": "Confirmar a nova palavra-passe",
+      "passwordPlaceholder": "Pelo menos 8 caracteres", "confirmPlaceholder": "Introduz novamente",
+      "submit": "Atualizar a palavra-passe", "cancel": "Cancelar a recuperação",
+      "help": "Se a ligação tiver expirado, volta à aplicação e pede um novo e-mail de recuperação.",
+      "rights": "© 2026 BabySteps. Todos os direitos reservados.",
+      "valid": "Ligação segura detetada. Se a aplicação estiver instalada, será aberta automaticamente.",
+      "invalid": "A ligação de recuperação é inválida ou expirou. Pede uma nova ligação no BabySteps.",
+      "minLength": "A palavra-passe deve ter pelo menos 8 caracteres.", "mismatch": "As palavras-passe não coincidem.",
+      "saving": "A guardar a palavra-passe…", "updating": "A atualizar a palavra-passe…",
+      "moduleError": "Não foi possível carregar o módulo seguro de recuperação. Verifica a tua ligação à Internet e tenta novamente.",
+      "success": "Palavra-passe atualizada. Já podes iniciar sessão no BabySteps com a tua nova palavra-passe.",
+      "updated": "Palavra-passe atualizada", "samePassword": "A nova palavra-passe deve ser diferente da atual.",
+      "cancelled": "Recuperação cancelada. A tua palavra-passe não foi alterada nesta página. Para continuar, pede uma nova ligação no BabySteps."
+    },
+    "email": {
+      "subject": "Recupera o acesso ao BabySteps", "title": "Cria uma nova palavra-passe",
+      "intro": "Recebemos um pedido para repor a palavra-passe da tua conta BabySteps. Usa esta ligação para escolheres uma nova palavra-passe.",
+      "action": "Repor a palavra-passe",
+      "security": "Esta ligação é pessoal e tem validade limitada. Não a partilhes. O BabySteps será aberto se a aplicação estiver instalada, ou poderás continuar na página web.",
+      "ignore": "Se não pediste esta alteração, podes ignorar este e-mail. A tua palavra-passe não será alterada pelo simples facto de o receberes.",
+      "help": "Precisas de ajuda?"
+    }
+  },
+  "it": {
+    "bridge": {
+      "pageTitle": "Reimposta la password — BabySteps",
+      "pageDescription": "Pagina sicura per reimpostare la password di BabySteps.",
+      "homeLabel": "Pagina iniziale delle informazioni legali di BabySteps", "navLabel": "Informazioni legali",
+      "privacy": "Privacy", "support": "Assistenza", "kicker": "Recupero sicuro",
+      "title": "Crea una nuova password",
+      "intro": "Proveremo ad aprire BabySteps automaticamente se l’app è installata. Se non si apre, puoi completare la modifica della password su questa pagina.",
+      "checking": "Verifica del link sicuro…", "openApp": "Apri BabySteps", "webAction": "Modifica su questa pagina",
+      "password": "Nuova password", "confirmPassword": "Conferma la nuova password",
+      "passwordPlaceholder": "Almeno 8 caratteri", "confirmPlaceholder": "Inseriscila di nuovo",
+      "submit": "Aggiorna la password", "cancel": "Annulla il recupero",
+      "help": "Se il link è scaduto, torna nell’app e richiedi una nuova e-mail di recupero.",
+      "rights": "© 2026 BabySteps. Tutti i diritti riservati.",
+      "valid": "Link sicuro rilevato. Se l’app è installata, si aprirà automaticamente.",
+      "invalid": "Il link di recupero non è valido o è scaduto. Richiedi un nuovo link in BabySteps.",
+      "minLength": "La password deve contenere almeno 8 caratteri.", "mismatch": "Le password non coincidono.",
+      "saving": "Salvataggio della password…", "updating": "Aggiornamento della password…",
+      "moduleError": "Impossibile caricare il modulo sicuro di recupero. Controlla la connessione e riprova.",
+      "success": "Password aggiornata. Ora puoi accedere a BabySteps con la nuova password.",
+      "updated": "Password aggiornata", "samePassword": "La nuova password deve essere diversa da quella attuale.",
+      "cancelled": "Recupero annullato. La password non è stata modificata da questa pagina. Per continuare, richiedi un nuovo link in BabySteps."
+    },
+    "email": {
+      "subject": "Recupera l’accesso a BabySteps", "title": "Crea una nuova password",
+      "intro": "Abbiamo ricevuto una richiesta per reimpostare la password del tuo account BabySteps. Usa questo link per scegliere una nuova password.",
+      "action": "Reimposta la password",
+      "security": "Questo link è personale e ha una scadenza. Non condividerlo. Si aprirà BabySteps se l’app è installata, oppure potrai continuare sulla pagina web.",
+      "ignore": "Se non hai richiesto questa modifica, puoi ignorare questa e-mail. Riceverla non cambia la tua password.",
+      "help": "Hai bisogno di aiuto?"
+    }
+  }
+}
